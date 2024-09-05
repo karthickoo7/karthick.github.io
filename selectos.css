@@ -1,0 +1,216 @@
+*{
+    background-color: rgb(205, 237, 226);
+    text-align: center;
+}
+
+#id{
+    text-shadow:2px 2px white ;
+
+    font-size: 40px;
+
+}
+
+.class{
+    text-shadow:2px 2px white ;
+    font-size: 40px;
+
+}
+
+h2,h3,li{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+span{
+font-size: 30px;
+}
+
+
+container p{
+padding:10px;
+
+}
+
+/* <------     ATTRIBUTES BASED SELECTORS    ------>     */
+
+[type="password"]{
+outline:solid 2px rgb(68, 68, 51);
+outline-style:ridge;
+}
+
+
+[type="text"]{
+    outline:solid 2px rgb(68, 68, 51);
+    outline-style:ridge;
+}
+
+[type="email"]{
+    outline:solid 2px rgb(68, 68, 51);
+outline-style:ridge;
+}
+
+[target]{
+    padding:10px;
+    color:rgb(14, 223, 63);
+    margin:20px;
+}
+
+[target="blank"]:hover{
+    background-color: black;
+    color:rgb(251, 251, 251);
+}
+
+[accesskey="g"]:hover{
+transition:all 2s ease-out;
+}
+
+p[inert]{
+
+font-weight: bold;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+p[title="para"]{
+padding:10px;
+margin:10px;
+color: rgb(135, 29, 235);
+}
+
+p[title^="This"]{
+   text-transform:uppercase;
+
+}
+
+p[title$="imp"]{
+    font-weight:bold;
+    text-decoration:UNDERLINE ;
+}
+
+p[title*="para"]{
+    background-color: rgb(237, 134, 177);
+
+}
+
+.class2{
+    letter-spacing:2px ;
+    word-spacing:5px;
+}
+
+/* <------   PSEUDO CLASESS  ------>        */
+
+div h1:first-child{
+background-color: blue;
+    text-decoration:overline;
+}
+p:nth-child(4){
+color:aliceblue;
+}
+
+ span:nth-child(9){
+text-decoration:line-through;
+font-size:25px;
+}
+p:last-child{
+background-color: aqua;
+}
+
+span:nth-last-child(3){
+    background-color: bisque;
+font-size: 20px;
+}
+
+
+/*  <------   COMBINATORS  ------>     */
+
+#intro > article{
+    text-indent: 40px;
+    background-color: rgb(97, 97, 203);
+    font-size: 25px;
+}
+#intro + p{
+
+ background-color: rgb(203, 97, 113);
+    font-size: 25px;
+}
+
+#intro ~ p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    color:blue;
+}
+
+/*  <------ FORM PSEUDO CLASSES    ------>      */
+[type="radio"]:checked + label{
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgb(243, 231, 22);
+    color:rgb(241, 38, 38);
+    text-shadow:3px 3px 10px rgb(13, 13, 13);
+}
+
+input:required{
+    border: solid 2px red;
+}
+
+input:optional{
+    border: solid 2px rgb(22, 194, 54);
+}
+
+input:disabled{
+    color:rgb(169, 98, 10)
+}
+
+[type="checkbox"]:checked + label{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(243, 22, 177);
+    color:rgb(254, 252, 252);
+    text-shadow:3px 3px 3px rgb(9, 11, 9) ;
+   
+   
+}
+
+input:focus{
+        border:2px SOLID red;
+    padding: 15px;
+    border-radius: 30PX;
+    transition: ALL 0.4S ease-in-out;
+
+}
+
+[type="checkbox"]:checked{
+
+    width:20px;
+    height:20px;
+background-color: brown;
+}
+
+[type="radio"]:checked{
+    width:20px;
+    height:20px;
+}
+
+/*  <-----   PSEUDO ELEMENTS     ------>     */
+
+.form p::first-letter{
+    font-size: 50px;
+    background-color: rgb(23, 180, 8);
+    text-shadow: 3px 3px 3px rgb(225, 225, 225);
+}
+
+.fname::after{
+content:"*";
+color: rgb(237, 5, 5);
+font-size: 20px;
+}
+.pass::after{
+    content:"*";
+   color: rgb(245, 11, 11);
+    font-size: 20px;
+    }
+
+    [for="email"]::before{
+        content:"@";
+        color:rgb(45, 116, 17);
+        font-weight: bold;
+    }
