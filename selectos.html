@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="selector.css">
+</head>
+<body>
+<!---
+         1.Basic Selectors                                 -->
+
+<div>
+    
+<h1 style="background-color:rgb(154, 154, 211); ;">Global Selector </h1>
+
+<hr>
+<h1 style="    background-color: rgb(154, 154, 211);">Id selector</h1>
+<div id="id">This is selector</div>
+
+<hr>
+
+<h1 style="background-color: rgb(154, 154, 211) ;">Class Selector</h1>
+<div class="class">This is Class selector</div>
+
+<hr>
+    <h1 style="background-color:  rgb(154, 154, 211);">Grouping Selector</h1>
+    <h2>This Group selector<h2>
+        <h3>Lorem ipsum dolor sit amet.</h3>
+
+    <ul style="list-style-type:none">
+        <li>apple</li>
+        <li>sammsung</li>
+        <li>realme</li>
+
+        </ul>
+        <hr>
+   
+    <h1 style=" background-color: rgb(154, 154, 211);">Element selector</h1>
+    <article>This is Element selector</article>
+
+<hr>
+
+<container>
+    <h1 style="background-color: rgb(154, 154, 211);">Descedants Selector</h1>
+   <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, assumenda</article>
+</container>
+</div>
+<hr>
+
+<!--ATTRIBUTES BASED SELECTORS AND COMBINATORS-->
+
+<div style="margin-top:50px">
+    <h1 style="background-color: blue;">ATTRIBUTES BASED SELECTORS</h1>
+    <a href="https://www.google.com/"  target="blank" accesskey="g">google.com</a>
+    <a href="https://www.amazon.in/" target="blank" acceskey="a">Amazon.com</a>
+<P CLASS="class1 class2 class3" title="para-graph" inert>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, neque!</P>
+<bold><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor ullam quisquam? Delectus cupiditate nesciunt nam debitis maiores tenetur ratione?</p></bold>
+<P class="class3 class5 class8"  title="para-graph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, exercitationem.</P>
+<P  class="class2 class8 class3"  title="para"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, suscipit!</P>
+<P title="para1-graph-imp"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, suscipit!</P>
+<span>span1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sequi inventore, voluptatem asperiores assumenda soluta dolore possimus ea voluptatum architecto alias explicabo nam modi in!</span><br>
+<span>span2 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sequi inventore, voluptatem asperiores assumenda soluta dolore possimus ea voluptatum architecto alias explicabo nam modi in!</span><br>
+<span>span3 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae sequi inventore, voluptatem asperiores assumenda soluta dolore possimus ea voluptatum architecto alias explicabo nam modi in!</span><br>
+<p title="This is content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ipsam ad reprehenderit, velit, accusamus dolorem, voluptates odit consectetur deserunt laboriosam harum qui beatae minus provident? Quidem dicta ut iure voluptates.</p>
+</div>
+
+
+<div  id="intro">
+   <article>This is Combinators</article>
+   <article>article2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia exercitationem quasi cum, officia architecto cumque!</article>
+  
+</div>
+
+
+<p>COMBINATORS Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, numquam?</p>
+<p>COMBINATORS Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae, repellendus!</p>
+<HR>
+
+
+<!--
+    FORM PSEUDO CLASSES AND ELEMENTS  -->
+    <DIV CLASS="form" style="margin-top:50px;" >
+
+<P>FORM PSEUDO CLASSES AND ELEMENTS</P>
+
+    <form action="">
+        <label for="fname" class="fname">First Name:</label><br>
+
+        <input type="text" id="fname" name="fname" required><br><br>
+
+        
+        <label for="password" class="pass">Password:</label><br>
+        <input type="Password" id="password" name="password" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" optional ><br><br>
+
+        <input type="radio" name="gender" checked="checked">
+<label for="gender">Male</label>
+
+<input type="radio" name="gender" checked="checked">
+        <label for="gender">Female</label><br><br>
+      
+
+        <label>Select mobiles:</label><br>
+        <input type="checkbox" checked="checked" id="redmi" name="redmi">
+        <label for="redmi">Redmi</label>
+
+        <input type="checkbox" id="realme" checked="checked" name="realme">
+        <label for="realme">Realme</label>
+
+        <input type="checkbox" id="iphone" checked="checked" name="iphone">
+        <label for="iphine">iphone</label>
+        <br><br>
+  
+<input type="submit" value="Submit" id="submit" required>&nbsp;
+        <input type="reset" value="Reset" id="reset"  required disabled>
+
+       
+    </form>
+
+ </DIV>
+
+
+
+  
+</body>
+</html>
